@@ -17,7 +17,7 @@
                 <div class="d-flex">
                     <div class="text-uppercase text-white">follow us</div>
                     <a href="#" v-for="(img, index) in linkImg" :key="index">
-                        <img :src="`../assets/images/${img.image}`" alt="">
+                        <img :src="getImageUrl(img.image)" alt="">
                     </a>
                 </div>
 
@@ -38,6 +38,12 @@ import {images} from '../data/data.js';
                 linkImg: images,
 
             }
+        },
+        methods:{
+            getImageUrl(img) {
+                return new URL(`../assets/images/${img}`, import.meta.url).href;
+            }
+
         }
     }
 </script>
