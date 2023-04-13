@@ -14,9 +14,9 @@
             <div class="d-flex justify-content-between container p-3">
                 <button class="btn btn-outline-primary text-white text-uppercase">sign up</button>
 
-                <div class="d-flex">
-                    <div class="text-uppercase text-white">follow us</div>
-                    <a href="#" v-for="(img, index) in linkImg" :key="index">
+                <div class="d-flex align-items-center">
+                    <div class="text-uppercase text-primary fs-5 fw-semibold px-1">follow us</div>
+                    <a class="px-1" href="#" v-for="(img, index) in linkImg" :key="index">
                         <img :src="getImageUrl(img.image)" alt="">
                     </a>
                 </div>
