@@ -16,8 +16,8 @@
 
                 <div class="d-flex">
                     <div class="text-uppercase text-white">follow us</div>
-                    <a href="#">
-                        <img src="../assets/images/footer-facebook.png" alt="">
+                    <a href="#" v-for="(img, index) in linkImg" :key="index">
+                        <img :src="`../assets/images/${img.image}`" alt="">
                     </a>
                 </div>
 
@@ -28,8 +28,17 @@
 </template>
 
 <script>
+
+import {images} from '../data/data.js';
+
     export default {
-        
+        name: 'FooterComponent',
+        data(){
+            return{
+                linkImg: images,
+
+            }
+        }
     }
 </script>
 
