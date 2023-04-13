@@ -8,6 +8,7 @@
                     link
                 </li>
             </ul>
+            <img src="../assets/images/dc-logo-bg.png" alt="">
         </div>
 
         <div class="bg-dark">
