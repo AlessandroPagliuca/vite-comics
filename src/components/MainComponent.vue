@@ -5,7 +5,6 @@
                 -- Content goes here -- 
             </div>
         </div>
-
         <!--In questo punto verrà aggiunto il componente delle icone-->
         <IconsComponent />
     </main>
