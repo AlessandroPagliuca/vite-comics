@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="d-flex justify-content-between align-items-center container py-3">
+        <div class="d-flex justify-content-between align-items-center container p-3">
             <img src="../assets/images/dc-logo.png" alt="logo-dc">
 
             <ul>
