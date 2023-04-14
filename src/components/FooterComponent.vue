@@ -3,13 +3,13 @@
         <IconsComponent />
         <div class="d-flex justify-content-between container text-white p-3">
             <!--Andremo a generare le 4 ul utilizzando il v-for nel tag ul-->
-            <ul v-for="(linkTitle, lkT) in linksFoot" :key="lkT">
+            <ul v-for="(linkFoot, lkT) in linksFoot" :key="lkT">
                 <li>
-                   <h6 class="text-uppercase">{{ linkTitle.title }}</h6> 
+                   <h6 class="text-uppercase">{{ linkFoot.title }}</h6> 
                 </li>
                 <!--Andremo a generare i link usando il v-for nel tag li-->
-                <li>
-                    <a>{{ linkTitle.links[count].footLink }}</a> 
+                <li v-for="link in linkFoot.links">
+                    <a>{{ link.footLink }}</a> 
                 </li>
             </ul>
             <!--<img src="../assets/images/dc-logo-bg.png" alt="">-->
