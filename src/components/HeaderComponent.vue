@@ -10,7 +10,7 @@
                 all'interno del tag li per generare la lista completa dei link  -->
                 <li v-for="link in linksNav">
                     <div class="c92LinkBox p-2 d-flex align-items-center">
-                        <a class="text-dark text-uppercase fw-semibold ">{{ link.navLink }}</a>
+                        <a class=" text-uppercase fw-semibold ">{{ link.navLink }}</a>
                     </div>
                 </li>
             </ul>
@@ -55,7 +55,12 @@
             cursor: pointer;
 
             a{
+                color: black;
                 text-decoration: none;
+
+                &:hover{
+                    color: #0d6efd;
+                }
             };
 
             &:hover{
