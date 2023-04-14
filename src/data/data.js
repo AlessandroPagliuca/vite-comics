@@ -308,4 +308,4 @@ const footLinks = [
         ],
     },
 ]
-export{images, icons, comics, navLinks};
+export{images, icons, comics, navLinks, footLinks};
