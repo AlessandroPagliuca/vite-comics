@@ -3,13 +3,16 @@
         <IconsComponent />
         <div class="d-flex justify-content-between container text-white p-3">
             <!--Andremo a generare le 4 ul utilizzando il v-for nel tag ul-->
-            <ul>
-                <!--Andremo a generare i link usando il v-for nel tag li-->
+            <ul v-for="(linkTitle, lkT) in linksFoot" :key="lkT">
                 <li>
-                    link
+                   <h6 class="text-uppercase">{{ linkTitle.title }}</h6> 
+                </li>
+                <!--Andremo a generare i link usando il v-for nel tag li-->
+                <li v-for="(link, lk) in linksFoot" :key="lk">
+                    <a>{{ link.links[count].footLink }}</a> 
                 </li>
             </ul>
-            <img src="../assets/images/dc-logo-bg.png" alt="">
+            <!--<img src="../assets/images/dc-logo-bg.png" alt="">-->
         </div>
 
         <div class="bg-dark">
@@ -18,7 +21,7 @@
 
                 <div class="d-flex align-items-center">
                     <div class="text-uppercase text-primary fs-5 fw-semibold px-1">follow us</div>
-                    <a class="px-1" href="#" v-for="(img, index) in linkImg" :key="index">
+                    <a class="px-1" href="#" v-for="(img, index) in linksImg" :key="index">
                         <img :src="getImageUrl(img.image)" alt="">
                     </a>
                 </div>
@@ -31,7 +34,7 @@
 
 <script>
 
-import {images} from '../data/data.js';
+import {images, footLinks} from '../data/data.js';
 import IconsComponent from './IconsComponent.vue';
 
     export default {
@@ -41,7 +44,9 @@ import IconsComponent from './IconsComponent.vue';
         },
         data(){
             return{
-                linkImg: images,
+                linksImg: images,
+                linksFoot: footLinks,
+                count: 0,
 
             }
         },
