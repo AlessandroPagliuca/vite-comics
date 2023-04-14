@@ -8,8 +8,8 @@
                    <h6 class="text-uppercase">{{ linkTitle.title }}</h6> 
                 </li>
                 <!--Andremo a generare i link usando il v-for nel tag li-->
-                <li v-for="(link, lk) in linksFoot" :key="lk">
-                    <a>{{ link.links[count].footLink }}</a> 
+                <li>
+                    <a>{{ linkTitle.links[count].footLink }}</a> 
                 </li>
             </ul>
             <!--<img src="../assets/images/dc-logo-bg.png" alt="">-->
