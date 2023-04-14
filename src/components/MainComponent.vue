@@ -13,6 +13,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn btn-primary text-uppercase fw-semibold">load more</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,6 +39,10 @@ import {comics} from '../data/data.js'
 </script>
 
 <style lang="scss" scoped>
+
+    main{
+        padding-top: 100px;
+    }
 
     .c92Card{
         width: 130px;
