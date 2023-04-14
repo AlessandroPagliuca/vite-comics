@@ -1,5 +1,6 @@
 <template>
     <footer id="hero">
+        <IconsComponent />
         <div class="d-flex justify-content-between container text-white p-3">
             <!--Andremo a generare le 4 ul utilizzando il v-for nel tag ul-->
             <ul>
@@ -31,9 +32,13 @@
 <script>
 
 import {images} from '../data/data.js';
+import IconsComponent from './IconsComponent.vue';
 
     export default {
         name: 'FooterComponent',
+        components:{
+            IconsComponent,
+        },
         data(){
             return{
                 linkImg: images,

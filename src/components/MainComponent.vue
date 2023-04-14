@@ -5,17 +5,13 @@
                 -- Content goes here -- 
             </div>
         </div>
-        <!--In questo punto verrà aggiunto il componente delle icone-->
-        <IconsComponent />
     </main>
 </template>
 
 <script>
-import IconsComponent from './IconsComponent.vue';
     export default {
         name: 'MainComponent',
         components:{
-            IconsComponent,
         }
 
         
