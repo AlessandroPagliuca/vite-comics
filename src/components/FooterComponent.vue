@@ -1,18 +1,22 @@
 <template>
-    <footer id="hero">
+    <footer id="hero" class="d-flex flex-column">
         <IconsComponent />
         <div class="d-flex justify-content-between container text-white p-3">
-            <!--Andremo a generare le 4 ul utilizzando il v-for nel tag ul-->
-            <ul v-for="(linkFoot, lkT) in linksFoot" :key="lkT">
-                <li>
-                   <h6 class="text-uppercase">{{ linkFoot.title }}</h6> 
-                </li>
-                <!--Andremo a generare i link usando il v-for nel tag li-->
-                <li v-for="link in linkFoot.links">
-                    <a>{{ link.footLink }}</a> 
-                </li>
-            </ul>
-            <!--<img src="../assets/images/dc-logo-bg.png" alt="">-->
+            <div class="row">
+                <!--Andremo a generare le 4 col con all'interno le ul utilizzando il v-for-->
+                <div class="col-4" v-for="(linkFoot, lkT) in linksFoot" :key="lkT">
+                    <h6 class="text-uppercase">{{ linkFoot.title }}</h6> 
+
+                    <ul>
+                        <!--Andremo a generare i link usando il v-for nel tag li-->
+                        <li v-for="link in linkFoot.links">
+                            <a class="c92Link">{{ link.footLink }}</a> 
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            
+            <img style="width: 16rem;" src="../assets/images/dc-logo-bg.png" alt="">
         </div>
 
         <div class="bg-dark">
@@ -65,5 +69,16 @@ import IconsComponent from './IconsComponent.vue';
         background-image: url(../assets/images/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-    }
+        position: relative;
+    };
+    .c92Link{
+        text-decoration: none;
+        color: grey;
+        cursor: pointer;
+
+        &:hover{
+            color: white;
+        }
+    };
+   
 </style>
