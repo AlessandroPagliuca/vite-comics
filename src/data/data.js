@@ -49,7 +49,7 @@ const icons = [
         image: 'buy-dc-power-visa.svg',
         title: 'dc power visa'
     },
-]
+];
 
 const comics = [
     {
@@ -124,6 +124,188 @@ const comics = [
       "series": "Catwoman",
       "type": "graphic novel"
     }
-]
+];
 
-export{images, icons, comics};
+const navLinks = [
+    {
+        navLink: 'characters',
+        current: false,
+    },
+
+    {
+        navLink: 'comics',
+        current: true,
+
+    },
+    {
+        navLink: 'movies',
+        current: false,
+
+    },
+
+    {
+        navLink: 'tv',
+        current: false,
+
+    },
+
+    {
+        navLink: 'games',
+        current: false,
+
+    },
+
+    {
+        navLink: 'collectibles',
+        current: false,
+
+    },
+
+    {
+        navLink: 'videos',
+        current: false,
+
+    },
+
+    {
+        navLink: 'fans',
+        current: false,
+
+    },
+
+    {
+        navLink: 'news',
+        current: false,
+
+    },
+
+    {
+        navLink: 'shop',
+        current: false,
+
+    },
+];
+
+const footLinks = [
+    {
+        title: 'dc comics',
+        links: [
+            {
+                footLink: 'Characters',
+            },
+
+            {
+                footLink: 'Comics',
+            },
+
+            {
+                footLink: 'Movies',
+            },
+
+            {
+                footLink: 'Tv',
+            },
+
+            {
+                footLink: 'Games',
+            },
+
+            {
+                footLink: 'Videos',
+            },
+
+            {
+                footLink: 'News',
+            },
+        ],
+    },
+
+    {
+        title: 'dc',
+        links: [
+            {
+                footLink: 'Terms Of Use',
+            },
+
+            {
+                footLink: 'Privacy policy (New)',
+            },
+
+            {
+                footLink: 'Ad Choices',
+            },
+
+            {
+                footLink: 'Advertising',
+            },
+
+            {
+                footLink: 'Jobs',
+            },
+
+            {
+                footLink: 'Subscriptions',
+            },
+
+            {
+                footLink: 'Talent Workshops',
+            },
+
+            {
+                footLink: 'CPSC Certificates',
+            },
+
+            {
+                footLink: 'Ratings',
+            },
+
+            {
+                footLink: 'Shop Help',
+            },
+
+            {
+                footLink: 'Contact Us',
+            },
+        ],
+       
+    },
+
+    {
+        title: 'sites',
+        links: [
+            {
+                footLink: 'DC',
+            },
+
+            {
+                footLink: 'MAD Magazine',
+            },
+
+            {
+                footLink: 'DC Kids',
+            },
+
+            {
+                footLink: 'DC Universe',
+            },
+
+            {
+                footLink: 'DC Power Visa',
+            },
+        ],
+    },
+
+    {
+        title: 'shop',
+        links: [
+            {
+                footLink: 'Shop DC',
+            },
+
+            {
+                footLink: 'Shop DC Collectibles',
+            },
+        ],
+    },
+]
+export{images, icons, comics, navLinks};
