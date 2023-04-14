@@ -59,7 +59,7 @@
             };
 
             &:hover{
-                border-bottom: 5px solid blue;
+                border-bottom: 5px solid #0d6efd;
 
             }
         }
